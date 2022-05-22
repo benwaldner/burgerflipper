@@ -1,0 +1,19 @@
+{
+    "api_key": "api_key",
+    "secret_key": "secret_key",
+    "base_asset": "1000SHIB",
+    "quote_asset": "USDT",
+    "order_qty": 1,
+    "tick_size": 0.000001,
+    "n_spreads": 10,
+    "estimate_window": 600000,
+    "period": 2000,
+    "sigma_tick_period": 550,
+    "gamma": 0.2,
+    "sigma_multiplier": 1,
+    "ema_tick_period": 200,
+    "stoploss": 0.8,
+    "stoploss_sleep": 300000,
+    "stopprofit": 0.00618,
+    "trailing_stop": 0.00382
+}
