@@ -1,5 +1,4 @@
 # Burgerfilpper🍔
-![alt text](./E42sI2lWUAAOHHo.jpeg)
 
 ## Summary
 This repo is an full Rust impelement of [J Fernandez Tapia · 2015.Modeling, optimization and estimation for the on-line control of trading algorithms in limit-order markets](https://www.theses.fr/2015PA066354.pdf) Avellaneda-Stoikov market making model extends version
@@ -38,6 +37,7 @@ RUST_LOG=info cargo run config.json
 
 ## Can it make money?
 yes, sometimes it can make money smoothly, but when the informed trader come and have the information advantage, this bot finally will become a Burgerfilpper at McDonald's.
+![alt text](./E42sI2lWUAAOHHo.jpeg)
 
 ## Sensitive to Rust unsafe keyword?
 full safe rusty code, relax bruh.
