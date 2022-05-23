@@ -37,7 +37,7 @@ RUST_LOG=info cargo run config.json
 ```
 
 ## Can it make money?
-yes, sometimes it can make money smoothly, but when the informed trader come and hit ur ass hard, u finally will become a Burgerfilpper at McDonald's. if u use this code, send my best wish to u.
+yes, sometimes it can make money smoothly, but when the informed trader come and have the information advantage, this bot finally will become a Burgerfilpper at McDonald's.
 
 ## Sensitive to Rust unsafe keyword?
 full safe rusty code, relax bruh.
