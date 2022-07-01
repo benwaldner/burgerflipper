@@ -8,8 +8,14 @@ only work for Binance USDT/BUSD PERP and OKX USDT PERP
 api client is the [exrs](https://github.com/zhenpingfeng/exrs) 
 
 ## How to use
+for binance
 ```rust
-RUST_LOG=info cargo run config.json
+RUST_LOG=info cargo run --release --bin burgerfilpper config.json
+```
+
+for okx
+```
+RUST_LOG=info cargo run --release --bin as_okex okex_config.json
 ```
 
 ## Parameters explain
