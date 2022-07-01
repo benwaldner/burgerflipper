@@ -24,8 +24,8 @@ use std::sync::Arc;
 // use tokio::sync::mpsc;
 use local_channel::mpsc;
 use tokio::sync::Mutex;
-use uuid::adapter::Simple;
 use uuid::Uuid;
+use uuid::fmt::Simple;
 
 use super::indicators::ema::Ema;
 
@@ -525,9 +525,9 @@ impl AvellanedaStoikov {
                             "wap: {}, ask_spread: {}, bid_spread: {}, sell_price {}, buy_price {}",
                             last_wap, spread.ask, spread.bid, sell_price, buy_price
                         );
-
-                        let order_id = Uuid::new_v4().to_simple();
-
+                        
+                        let order_id = Uuid::new_v4();
+                        let order_id = order_id.as_simple();
                         match account_client
                             .limit_buy(
                                 &pair,
@@ -541,14 +541,14 @@ impl AvellanedaStoikov {
                             Ok(answer) => {
                                 info!("Limit buy {:?}", answer);
                                 if answer.code == 0 {
-                                    ids.push(order_id);
+                                    ids.push(*order_id);
                                 }
                             }
                             Err(err) => warn!("Limit buy Error: {}", err),
                         }
 
-                        let order_id = Uuid::new_v4().to_simple();
-
+                        let order_id = Uuid::new_v4();
+                        let order_id = order_id.as_simple();
                         match account_client
                             .limit_sell(
                                 &pair,
@@ -562,7 +562,7 @@ impl AvellanedaStoikov {
                             Ok(answer) => {
                                 info!("Limit sell {:?}", answer);
                                 if answer.code == 0 {
-                                    ids.push(order_id);
+                                    ids.push(*order_id);
                                 }
                             }
                             Err(err) => warn!("Limit sell Error: {}", err),

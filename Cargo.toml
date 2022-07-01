@@ -14,7 +14,7 @@ path = "src/bin/as_okex.rs"
 
 [dependencies]
 actix-rt = "2.7.0"
-anyhow = "1.0.57"
+anyhow = "1.0.58"
 awc = "3.0.0"
 bytes = "1.1.0"
 chrono = "0.4.19"
@@ -27,10 +27,10 @@ local-channel = "0.1.3"
 log = "0.4.17"
 serde = "1.0.137"
 serde_derive = "1.0.137"
-serde_json = "1.0.81"
-snmalloc-rs = { version = "0.3.0", features = ["1mib"] }
+serde_json = "1.0.82"
+snmalloc-rs = "0.3.3"
 tokio = "1.19.2"
-uuid = { version = "1.1.1", features = ["v4"] }
+uuid = { version = "1.1.2", features = ["v4"] }
 
 [profile.release]
 lto = true
