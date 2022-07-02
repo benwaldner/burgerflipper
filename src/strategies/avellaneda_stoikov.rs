@@ -453,7 +453,7 @@ impl AvellanedaStoikov {
                                 order_qty,
                                 buy_price,
                                 PositionSide::Both,
-                                TimeInForce::GTC,
+                                TimeInForce::GTX,
                             )
                             .await
                         {
@@ -467,7 +467,7 @@ impl AvellanedaStoikov {
                                 order_qty,
                                 sell_price,
                                 PositionSide::Both,
-                                TimeInForce::GTC,
+                                TimeInForce::GTX,
                             )
                             .await
                         {
