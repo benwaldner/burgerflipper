@@ -46,6 +46,8 @@ async fn main() {
             )
             .await
             .unwrap();
+        
+        tokio::time::sleep(tokio::time::Duration::from_secs(2)).await;
 
         let arg = Arg {
             channel: "positions".to_string(),
