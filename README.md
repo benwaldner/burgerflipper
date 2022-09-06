@@ -1,4 +1,4 @@
-# Burgerfilpper🍔
+# Burgerflipper🍔
 
 ## Summary
 This repo is an full Rust impelement of [J Fernandez Tapia · 2015.Modeling, optimization and estimation for the on-line control of trading algorithms in limit-order markets](https://www.theses.fr/2015PA066354.pdf) Avellaneda-Stoikov market making model extends version
