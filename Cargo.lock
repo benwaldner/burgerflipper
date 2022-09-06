@@ -507,6 +507,7 @@ dependencies = [
 [[package]]
 name = "exrs"
 version = "0.1.0"
+source = "git+https://github.com/zhenpingfeng/exrs#34c24008fdcb8a50ff61a78a51052aaf168b7ac5"
 dependencies = [
  "actix-codec",
  "actix-rt",
