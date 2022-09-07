@@ -44,6 +44,7 @@ RUST_LOG=info cargo run --release --bin as_okex okex_config.json
 ## Can it make money?
 yes, sometimes it can make money smoothly, but when the informed trader come and have the information advantage, this bot will eventually become a burgerflipper at McDonald's.
 ![alt text](./E42sI2lWUAAOHHo.jpeg)
+![alt text](./FcBR4_8akAE__Vk.png)
 
 ## Sensitive to Rust unsafe keyword?
 full safe rusty code, relax bruh.
